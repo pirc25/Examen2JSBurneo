@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds">
+    <option name="x" value="15" />
+    <option name="y" value="30" />
+    <option name="width" value="1890" />
+    <option name="height" value="930" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
   <component name="ChangeListManager">
     <list default="true" id="738e33d8-e5af-45e5-bd79-d1a1b10d5c13" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -121,5 +132,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+>>>>>>> c7f666fa6bed36ee6ee572bbf56e646d1b6bf357
   </component>
 </project>
