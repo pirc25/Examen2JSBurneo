@@ -16,17 +16,13 @@ module.exports = {
       type: 'string',
       required: true
     },
-    sucursal: {
-      type: 'string',
-      required: true
-    },
     urlImg: {
-      type: 'number',
+      type: 'string',
       required: true
     },
     producto: {
       collection: 'Producto',
-      via: 'productoId'
+      via: 'tienda'
     }
 
   },

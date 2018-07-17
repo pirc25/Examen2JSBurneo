@@ -17,11 +17,11 @@ module.exports = {
       required: true
     },
     valor: {
-      type: 'string',
+      type: 'number',
       required: true
     },
     urlImg: {
-      type: 'number',
+      type: 'string',
       required: true
     },
     tienda: {

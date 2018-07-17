@@ -9,18 +9,18 @@ module.exports = {
 
   attributes: {
 
-    nombre:{
-      type:'string',
-      required: true
-    },
-    apellido:{
-      type:'string',
-      required: true
-    },
-    correo:{
-      type:'string',
-      required: true
-    }
+      nombre:{
+        type:'string',
+        required: true
+      },
+      apellido:{
+        type:'string',
+        required: true
+      },
+      correo:{
+        type:'string',
+        required: true
+      }
 
   },
 
