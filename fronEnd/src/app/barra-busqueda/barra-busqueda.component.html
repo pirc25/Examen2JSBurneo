@@ -1,0 +1,26 @@
+<nav class="barra-busqueda barra-busqueda-expand-lg barra-busqueda-dark bg-dark">
+
+  <a class="barra-busqueda-brand text-white mb-0 h1 "[routerLink]="['/home']" >
+    <img src="http://cdn.foxsportsla.com/sites/foxsports-la/files/img/competition/shields-original/logo_mundial_original.png?ver=1f8c3775-c296-468a-b021-0bfe7ba91db1" width="30" height="30" class="d-inline-block align-top" alt="">
+    FIFA WORD CUP RUSIA 2018</a>
+
+  <button class="barra-busqueda-toggler" type="button" data-toggle="collapse" data-target="#barra-busquedaNavAltMarkup" aria-controls="barra-busquedaNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="barra-busqueda-toggler-icon"></span>
+  </button>
+
+  <div class="collapse barra-busqueda-collapse " id="barra-busquedaNavAltMarkup">
+    <ul class="barra-busqueda-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/home']"><i class="icon ion-md-home"></i> Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" [routerLink]="['/carrito']"> <i class="icon ion-md-cart"></i> Carrito de Compras <span class="badge badge-light">{{indice}}</span></a>
+      </li>
+
+    </ul>
+
+    <span class="barra-busqueda-text "> <i class="icon ion-md-contact"></i> Usuario: {{nombre}}</span>
+  </div>
+</nav>

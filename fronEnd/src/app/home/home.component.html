@@ -1,0 +1,106 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-nav-bar></app-nav-bar>
+  </div>
+
+  <div class="col-sm-12">
+    <div class=" card text-white bg-secondary">
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-sm-3" align="right"><i class="icon ion-md-search"></i></div>
+          <div class="col-sm-6">
+            <input class="form-control " [(ngModel)]="searchText" type="search" placeholder="Buscar por equipo o jugador..." aria-label="Search">
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-sm-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h3>EQUIPOS:</h3>
+        <hr class="my-4">
+        <div class="row">
+
+          <div class="col-sm-4" *ngFor=" let nombre of arrayNombresEquipos | search: searchText; let indice=index ">
+            <div *ngFor="let equipo of equipos">
+              <div *ngIf="equipo.nombre==nombre && indice<=6">
+                <div class="card" [routerLink]="['/equipo',equipo.id]">
+                  <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]=equipo.urlImagen alt="Card image cap"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">{{equipo.nombre}}</h5>
+                    <p class="card-text">Liga: {{equipo.liga}}</p>
+                    <p class="card-text">Fecha de Creacion: {{equipo.fechaCreacion}}</p>
+                    <!--<a href="#" [routerLink]="['/equipo',equipo.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="demo" class="collapse">
+            <div class="col-sm-4" *ngFor=" let nombre of arrayNombresEquipos | search: searchText; let indice=index ">
+              <div *ngFor="let equipo of equipos">
+                <div *ngIf="equipo.nombre==nombre && indice>6">
+                  <div class="card" [routerLink]="['/equipo',equipo.id]">
+                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]=equipo.urlImagen alt="Card image cap"></div>
+
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center">{{equipo.nombre}}</h5>
+                      <p class="card-text">Liga: {{equipo.liga}}</p>
+                      <p class="card-text">Fecha de Creacion: {{equipo.fechaCreacion}}</p>
+                      <!--<a href="#" [routerLink]="['/equipo',equipo.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12"><br></div>
+          <div class="col-sm 12" align="center" *ngIf="arrayNombresJugadores.length>6">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Cargar mas </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h3>JUGADORES:</h3>
+        <hr class="my-4">
+        <div class="row">
+
+          <div class="col-sm-3" *ngFor=" let nombre of arrayNombresJugadores | search: searchText">
+
+            <div *ngFor="let jugador of jugadores">
+              <div *ngIf="jugador.nombre==nombre">
+                <div class="card" [routerLink]="['/equipo',jugador.equipoIDFK.id,'jugador',jugador.id]">
+                  <div align="center"><img class="card-img-top img-fluid" [src]=jugador.urlImagen alt="Imagen Jugador"></div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">{{jugador.nombre}} {{jugador.apellido}}</h5>
+                    <p class="card-text">Numero Camiseta: {{jugador.numeroCamiseta}}</p>
+                    <!--<a class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
