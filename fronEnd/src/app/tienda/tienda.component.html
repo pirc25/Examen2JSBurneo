@@ -1,29 +1,27 @@
 <div class="row">
 
   <div class="col-sm-12">
-    <app-nav-bar></app-nav-bar>
+    <app-barrabusqueda></app-barrabusqueda>
   </div>
 
   <div class="col-sm-12" align="center">
     <br>
-    <p class="h3">ATRIBUTOS DEL EQUIPO</p>
+    <p class="h3">ATRIBUTOS DEL tienda</p>
   </div>
   <div class="col-sm-3"></div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-header">
-        Liga Perteneciente: {{equipo[0].liga}}
+        Liga Perteneciente: {{tienda[0].liga}}
       </div>
       <div class="card-body">
         <div class="row">
           <div class="col-sm-5">
-            <img class="img-fluid" [src]=equipo[0].urlImagen alt="No disponible">
+            <img class="img-fluid" [src]=tienda[0].urlImagen alt="No disponible">
           </div>
           <div class="col-sm-7">
-            <h5 class="card-title">Nombre: {{equipo[0].nombre}} </h5>
-            <p class="card-text">Numero de Copas: {{equipo[0].numeroCopas}}</p>
-            <p class="card-text">Fecha de Creacion: {{equipo[0].fechaCreacion}}</p>
-            <p class="card-text">Liga: {{equipo[0].liga}}</p>
+            <h5 class="card-title">Nombre: {{tienda[0].nombre}} </h5>
+            <p class="card-text">Direccion: {{tienda[0].Direccion}}</p>
 
           </div>
         </div>
@@ -38,17 +36,17 @@
   <div class="col-sm-12">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h3>JUGADORES:</h3>
+        <h3>productos:</h3>
         <hr class="my-4">
         <div class="row">
-          <div class="col-sm-3" *ngFor="let jugador of jugadores">
+          <div class="col-sm-3" *ngFor="let producto of productos">
             <div class="card">
-              <div align="center"><img class="card-img-top img-fluid" [src]=jugador.urlImagen alt="Imagen Jugador"></div>
+              <div align="center"><img class="card-img-top img-fluid" [src]=producto.urlImag alt="Imagen producto"></div>
               <div class="card-body">
-                <h5 class="card-title" style="text-align: center">{{jugador.nombre}} {{jugador.apellido}}</h5>
-                <p class="card-text">Goles: {{jugador.goles}}</p>
-                <p class="card-text">Numero Camiseta: {{jugador.numeroCamiseta}}</p>
-                <a href="#" [routerLink]="['/equipo',jugador.equipoIDFK.id,'jugador',jugador.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>
+                <h5 class="card-title" style="text-align: center">{{producto.nombre}} </h5>
+                <p class="card-text">Codigo: {{producto.codigo}}</p>
+                <p class="card-text">valor: {{producto.numeroValor}}</p>
+                <a href="#" [routerLink]="['/tienda',producto.tienda.id,'producto',producto.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>
               </div>
             </div>
 

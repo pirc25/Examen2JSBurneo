@@ -10,11 +10,11 @@ import {HttpClient} from "@angular/common/http";
 export class HomeComponent implements OnInit {
 
   clickEnBuscar: EventEmitter<object> = new EventEmitter();
-  equipos;
-  jugadores;
+  tiendas;
+  productos;
   searchText:string;
-  arrayNombresEquipos=[];
-  arrayNombresJugadores=[];
+  arrayNombrestiendas=[];
+  arrayNombresproductos=[];
 
   j:string;
 
@@ -24,16 +24,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    const observableEquipo$ = this._httpClient
+    const observableProductos$ = this._httpClient
       .get('http://localhost:1337/equipo');
 
-    observableEquipo$
+    observableProducto$
       .subscribe(
         results=>{
           console.log(results);
-          //this.arrayEquipos=JSON.parse(JSON.stringify(results));
-          this.equipos=results;
-          this.llenarEquipos();
+          //this.arraytiendas=JSON.parse(JSON.stringify(results));
+          this.tiendas=results;
+          this.llenartiendas();
 
         },
         (error)=>{
@@ -44,15 +44,15 @@ export class HomeComponent implements OnInit {
         }
       );
 
-    const observableJugador$ = this._httpClient
+    const observableProducto$ = this._httpClient
       .get('http://localhost:1337/jugador');
 
-    observableJugador$
+    observableProducto$
       .subscribe(
         results=>{
           console.log(results);
-          this.jugadores=results;
-          this.llenarJugadores()
+          this.productos=results;
+          this.llenarproductos()
 
         },
         (error)=>{
@@ -66,15 +66,15 @@ export class HomeComponent implements OnInit {
 
   }
 
-  llenarEquipos(){
-    for (var i = 0; i < this.equipos.length; i++) {
-      this.arrayNombresEquipos.push(this.equipos[i].nombre);
+  llenartiendas(){
+    for (var i = 0; i < this.tiendas.length; i++) {
+      this.arrayNombrestiendas.push(this.tiendas[i].nombre);
     }
   }
 
-  llenarJugadores(){
-    for (var i = 0; i < this.jugadores.length; i++) {
-      this.arrayNombresJugadores.push(this.jugadores[i].nombre);
+  llenarproductos(){
+    for (var i = 0; i < this.productos.length; i++) {
+      this.arrayNombresproductos.push(this.productos[i].nombre);
     }
   }
 

@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12">
-    <app-nav-bar></app-nav-bar>
+    <app-barrabusqueda></app-barrabusqueda>
   </div>
 
   <div class="col-sm-12">
@@ -10,7 +10,7 @@
 
           <div class="col-sm-3" align="right"><i class="icon ion-md-search"></i></div>
           <div class="col-sm-6">
-            <input class="form-control " [(ngModel)]="searchText" type="search" placeholder="Buscar por equipo o jugador..." aria-label="Search">
+            <input class="form-control " [(ngModel)]="searchText" type="search" placeholder="Buscar por Tienda o tienda..." aria-label="Search">
           </div>
           <div class="col-sm-3"></div>
         </div>
@@ -22,38 +22,37 @@
   <div class="col-sm-12">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h3>EQUIPOS:</h3>
+        <h3>tiendaS:</h3>
         <hr class="my-4">
         <div class="row">
 
-          <div class="col-sm-4" *ngFor=" let nombre of arrayNombresEquipos | search: searchText; let indice=index ">
-            <div *ngFor="let equipo of equipos">
-              <div *ngIf="equipo.nombre==nombre && indice<=6">
-                <div class="card" [routerLink]="['/equipo',equipo.id]">
-                  <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]=equipo.urlImagen alt="Card image cap"></div>
+          <div class="col-sm-4" *ngFor=" let nombre of arrayNombresTiendas | search: searchText; let indice=index ">
+            <div *ngFor="let tienda of tiendas">
+              <div *ngIf="tienda.nombre==nombre && indice<=6">
+                <div class="card" [routerLink]="['/tienda',tienda.id]">
+                  <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]=tienda.urlImagen alt="Card image cap"></div>
 
                   <div class="card-body">
-                    <h5 class="card-title" style="text-align: center">{{equipo.nombre}}</h5>
-                    <p class="card-text">Liga: {{equipo.liga}}</p>
-                    <p class="card-text">Fecha de Creacion: {{equipo.fechaCreacion}}</p>
-                    <!--<a href="#" [routerLink]="['/equipo',equipo.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
+                    <h5 class="card-title" style="text-align: center">{{tienda.nombre}}</h5>
+                    <p class="card-text">Liga: {{tienda.liga}}</p>
+                    <p class="card-text">Fecha de Creacion: {{tienda.fechaCreacion}}</p>
+                    <!--<a href="#" [routerLink]="['/tienda',tienda.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div id="demo" class="collapse">
-            <div class="col-sm-4" *ngFor=" let nombre of arrayNombresEquipos | search: searchText; let indice=index ">
-              <div *ngFor="let equipo of equipos">
-                <div *ngIf="equipo.nombre==nombre && indice>6">
-                  <div class="card" [routerLink]="['/equipo',equipo.id]">
-                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]=equipo.urlImagen alt="Card image cap"></div>
+            <div class="col-sm-4" *ngFor=" let nombre of arrayNombresTiendas | search: searchText; let indice=index ">
+              <div *ngFor="let tienda of tiendas">
+                <div *ngIf="tienda.nombre==nombre && indice>6">
+                  <div class="card" [routerLink]="['/tienda',tienda.id]">
+                    <div align="center"><img class="card-img-top img-fluid" style="width: 50%" [src]=tienda.urlImagen alt="Card image cap"></div>
 
                     <div class="card-body">
-                      <h5 class="card-title" style="text-align: center">{{equipo.nombre}}</h5>
-                      <p class="card-text">Liga: {{equipo.liga}}</p>
-                      <p class="card-text">Fecha de Creacion: {{equipo.fechaCreacion}}</p>
-                      <!--<a href="#" [routerLink]="['/equipo',equipo.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
+                      <h5 class="card-title" style="text-align: center">{{tienda.nombre}}</h5>
+                      <p class="card-text">Valor: {{tienda.Valor}}</p>
+                      <!--<a href="#" [routerLink]="['/tienda',tienda.id]" class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
 
                     </div>
                   </div>
@@ -63,7 +62,7 @@
           </div>
 
           <div class="col-sm-12"><br></div>
-          <div class="col-sm 12" align="center" *ngIf="arrayNombresJugadores.length>6">
+          <div class="col-sm 12" align="center" *ngIf="arrayNombresProductos.length>6">
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Cargar mas </button>
           </div>
 
@@ -76,19 +75,19 @@
   <div class="col-sm-12">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h3>JUGADORES:</h3>
+        <h3>Productos:</h3>
         <hr class="my-4">
         <div class="row">
 
-          <div class="col-sm-3" *ngFor=" let nombre of arrayNombresJugadores | search: searchText">
+          <div class="col-sm-3" *ngFor=" let nombre of arrayNombresProductos | search: searchText">
 
-            <div *ngFor="let jugador of jugadores">
-              <div *ngIf="jugador.nombre==nombre">
-                <div class="card" [routerLink]="['/equipo',jugador.equipoIDFK.id,'jugador',jugador.id]">
-                  <div align="center"><img class="card-img-top img-fluid" [src]=jugador.urlImagen alt="Imagen Jugador"></div>
+            <div *ngFor="let producto of Productos">
+              <div *ngIf="producto.nombre==nombre">
+                <div class="card" [routerLink]="['/tienda',producto.tiendaIDFK.id,'producto',producto.id]">
+                  <div align="center"><img class="card-img-top img-fluid" [src]=producto.urlImagen alt="Imag producto"></div>
                   <div class="card-body">
-                    <h5 class="card-title" style="text-align: center">{{jugador.nombre}} {{jugador.apellido}}</h5>
-                    <p class="card-text">Numero Camiseta: {{jugador.numeroCamiseta}}</p>
+                    <h5 class="card-title" style="text-align: center">{{producto.nombre}} </h5>
+                    <p class="card-text">valor: {{producto.valor}}</p>
                     <!--<a class="btn btn-primary"><i class="icon ion-md-today"></i> Detalles</a>-->
                   </div>
                 </div>

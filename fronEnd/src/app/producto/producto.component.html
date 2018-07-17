@@ -1,7 +1,7 @@
 <div class="row">
 
   <div class="col-sm-12">
-    <app-nav-bar></app-nav-bar>
+    <app-barrabusqueda></app-barrabusqueda>
   </div>
 
   <div class=" container col-sm-12" *ngIf="estado==true">
@@ -12,7 +12,7 @@
         <div class="card bg-light" >
           <div class="card-header"> <i class="icon ion-md-alert"></i> NO DISPONIBLE</div>
           <div class="card-body">
-            <h5 class="card-title">Este jugador ya se encuentra en tus compras.</h5>
+            <h5 class="card-title">Este producto ya se encuentra en tus compras.</h5>
 
           </div>
         </div>
@@ -24,26 +24,24 @@
     <div class="row">
       <div class="col-sm-12" align="center">
         <br>
-        <p class="h3">ATRIBUTOS DEL JUGADOR</p>
+        <p class="h3">ATRIBUTOS DEL producto</p>
       </div>
       <div class="col-sm-3"></div>
       <div class="col-sm-6">
         <div class="card">
           <div class="card-header">
-            Seleccion: {{jugador[0].tienda.nombre}}
+            Seleccion: {{producto[0].tienda.nombre}}
           </div>
           <div class="card-body">
             <div class="row">
               <div class="col-sm-5">
-                <img class="img-fluid" [src]=jugador[0].urlImagen alt="No disponible">
+                <img class="img-fluid" [src]=producto[0].urlImagen alt="No disponible">
               </div>
               <div class="col-sm-7">
-                <h5 class="card-title">Nombre: {{jugador[0].nombre}} {{jugador[0].apellido}}</h5>
-                <p class="card-text">Numero Camiseta: {{jugador[0].numeroCamiseta}}</p>
-                <p class="card-text">Goles: {{jugador[0].goles}}</p>
-                <p class="card-text">Fecha de Ingreso: {{jugador[0].fechaIngreso}}</p>
-                <p class="card-text">Precio: {{jugador[0].valor | currency}}</p>
-                <button [routerLink]="['/home']" (click)="comprarJugador()" class="btn btn-primary">
+                <h5 class="card-title">Nombre: {{producto[0].nombre}} </h5>
+                <p class="card-text">Codigo: {{producto[0].codigo}}</p>
+                <p class="card-text">Varlor: {{producto[0].valor}}</p>
+                <button [routerLink]="['/home']" (click)="comprarproducto()" class="btn btn-primary">
                   <i class="icon ion-md-cart"></i> Agregar al Carro</button>
               </div>
             </div>

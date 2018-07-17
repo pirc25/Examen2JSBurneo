@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BarraBusquedaComponent } from './barra-busqueda.component';
+import { BarraBusquedaComponent } from './barrabusqueda.component';
 
 describe('BarraBusquedaComponent', () => {
   let component: BarraBusquedaComponent;

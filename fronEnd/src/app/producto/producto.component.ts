@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
-import {ComprasService} from "../servicios/compras.service";
+import {ComprasService} from "../service/compras.service";
 
 @Component({
-  selector: 'app-jugador',
-  templateUrl: './jugador.component.html',
-  styleUrls: ['./jugador.component.css']
+  selector: 'app-producto',
+  templateUrl: './producto.component.html',
+  styleUrls: ['./producto.component.css']
 })
-export class JugadorComponent implements OnInit {
+export class ProductoComponent implements OnInit {
 
-  jugador=[];
+  producto=[];
   _parametros:any;
 
   nombre:string;
@@ -21,22 +21,22 @@ export class JugadorComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.cargarJugador();
+    this.cargarProducto();
 
   }
 
-  cargarJugador(){
+  cargarProducto(){
     this._activetedRoute.params.subscribe(parametros=>{
       this._parametros=parametros;
-      this._httpClient.get('http://localhost:1337/jugador?id='+this._parametros.idjugador)
+      this._httpClient.get('http://localhost:1337/producto?id='+this._parametros.idproducto)
         .subscribe(
           (res:any[])=>{
-            this.jugador=res;
-            console.log(this.jugador);
-            console.log(this.jugador[0].nombre);
-            this.estado=this._compras.buscarJugadores(this.jugador[0].id,this.jugador[0].equipoIDFK.id);
+            this.producto=res;
+            console.log(this.producto);
+            console.log(this.producto[0].nombre);
+            this.estado=this._compras.buscarproductoes(this.producto[0].id,this.producto[0].tienda.id);
             console.log(this.estado);
-            console.log(this._compras.getJugadores());
+            console.log(this._compras.getproductoes());
           },
           (err)=>{
             console.log(err);
@@ -47,8 +47,8 @@ export class JugadorComponent implements OnInit {
     });
   }
 
-  comprarJugador(){
-    this._compras.ingresarJugadores(this.jugador);
+  comprarProducto(){
+    this._compras.ingresarProductos(this.producto);
     this._compras.actualizarTamanio();
     console.log(this._compras)
   }

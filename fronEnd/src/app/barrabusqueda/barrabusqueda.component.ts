@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {ComprasService} from "../servicios/compras.service";
-import {UsuarioService} from "../servicios/usuario.service";
+import {ComprasService} from "../service/compras.service";
+import {UsuarioService} from "../service/usuario.service";
 
 @Component({
-  selector: 'app-barra-busqueda',
-  templateUrl: './barra-busqueda.component.html',
-  styleUrls: ['./barra-busqueda.component.css']
+  selector: 'app-barrabusqueda',
+  templateUrl: './barrabusqueda.component.html',
+  styleUrls: ['./barrabusqueda.component.css']
 })
 export class NavBarComponent implements OnInit {
 

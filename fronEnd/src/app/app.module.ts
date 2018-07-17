@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { TiendaComponent } from './tienda/tienda.component';
 import { ProductoComponent } from './producto/producto.component';
-import { BarraBusquedaComponent } from './barra-busqueda/barra-busqueda.component';
+import { BarraBusquedaComponent } from './barrabusqueda/barrabusqueda.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
