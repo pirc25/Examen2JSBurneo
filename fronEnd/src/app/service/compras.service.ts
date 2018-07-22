@@ -31,11 +31,11 @@ export class ComprasService {
     );
   }
 
-  public borrarproductoes(indice){
+  public borrarproductos(indice){
     this._carrito.splice(indice,1);
   }
 
-  public buscarproductoes(id:number, equipoIDFK:number){
+  public buscarproductos(id:number, tienda:number){
 
     if(this._carrito.length==0){
       this._estado=false;
@@ -44,7 +44,7 @@ export class ComprasService {
 
       for (var i = 0; i < this._carrito.length; i++) {
         console.log('carrito',this._carrito[i])
-        if(this._carrito[i].id==id && this._carrito[i].equipoIDFK==equipoIDFK){
+        if(this._carrito[i].id==id && this._carrito[i].tienda==tienda){
           this._estado=true;
           break;
         }else{

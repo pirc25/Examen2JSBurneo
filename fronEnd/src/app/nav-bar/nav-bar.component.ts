@@ -3,9 +3,9 @@ import {ComprasService} from "../service/compras.service";
 import {UsuarioService} from "../service/usuario.service";
 
 @Component({
-  selector: 'app-barrabusqueda',
-  templateUrl: './barrabusqueda.component.html',
-  styleUrls: ['./barrabusqueda.component.css']
+  selector: 'app-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
 

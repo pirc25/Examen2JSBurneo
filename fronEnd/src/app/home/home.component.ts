@@ -24,16 +24,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    const observableProductos$ = this._httpClient
-      .get('http://localhost:1337/equipo');
+    const observableProducto$ = this._httpClient
+      .get('http://localhost:1337/producto');
 
     observableProducto$
       .subscribe(
         results=>{
           console.log(results);
           //this.arraytiendas=JSON.parse(JSON.stringify(results));
-          this.tiendas=results;
-          this.llenartiendas();
+          this.productos=results;
+          this.llenarproductos();
 
         },
         (error)=>{
@@ -44,15 +44,15 @@ export class HomeComponent implements OnInit {
         }
       );
 
-    const observableProducto$ = this._httpClient
-      .get('http://localhost:1337/jugador');
+    const observableTienda$ = this._httpClient
+      .get('http://localhost:1337/Tienda');
 
-    observableProducto$
+    observableTienda$
       .subscribe(
         results=>{
           console.log(results);
-          this.productos=results;
-          this.llenarproductos()
+          this.tiendas=results;
+          this.llenartiendas()
 
         },
         (error)=>{

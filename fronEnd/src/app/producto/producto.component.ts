@@ -34,9 +34,9 @@ export class ProductoComponent implements OnInit {
             this.producto=res;
             console.log(this.producto);
             console.log(this.producto[0].nombre);
-            this.estado=this._compras.buscarproductoes(this.producto[0].id,this.producto[0].tienda.id);
+            this.estado=this._compras.buscarproductos(this.producto[0].id,this.producto[0].tienda.id);
             console.log(this.estado);
-            console.log(this._compras.getproductoes());
+            console.log(this._compras.getproducto());
           },
           (err)=>{
             console.log(err);
@@ -48,7 +48,7 @@ export class ProductoComponent implements OnInit {
   }
 
   comprarProducto(){
-    this._compras.ingresarProductos(this.producto);
+    this._compras.ingresarproducto(this.producto);
     this._compras.actualizarTamanio();
     console.log(this._compras)
   }

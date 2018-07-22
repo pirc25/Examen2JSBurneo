@@ -5,8 +5,12 @@ import { AppComponent } from './app.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { TiendaComponent } from './tienda/tienda.component';
 import { ProductoComponent } from './producto/producto.component';
-import { BarraBusquedaComponent } from './barrabusqueda/barrabusqueda.component';
 import { HomeComponent } from './home/home.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {SearchPipe} from "./pipes/search.pipe";
+import {routing} from "./app.routes";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,11 +18,16 @@ import { HomeComponent } from './home/home.component';
     CarritoComponent,
     TiendaComponent,
     ProductoComponent,
-    BarraBusquedaComponent,
-    HomeComponent
+    HomeComponent,
+    NavBarComponent,
+    SearchPipe
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
