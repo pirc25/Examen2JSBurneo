@@ -1,88 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f4d381c-ddd9-41d3-8458-e1053a51bcd2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/Componentes/descripcionProducto/descripcionProducto.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/api/models/Usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/api/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/assets/dependencies/sails.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/assets/dependencies/sails.io.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/config/env/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/config/env/production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/config/security.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/config/security.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/clean.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/clean.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/coffee.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/coffee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/concat.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/concat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/copy.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/copy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/cssmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/cssmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/hash.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/hash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/jst.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/jst.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/less.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/less.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/sails-linker.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/sails-linker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/sync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/uglify.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/uglify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/tasks/config/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/tasks/config/watch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/npm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/app.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/carrito/carrito.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/carrito/carrito.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/carrito/carrito.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/carrito/carrito.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/home/home.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/home/home.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/nav-bar/nav-bar.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/nav-bar/nav-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/nav-bar/nav-bar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/nav-bar/nav-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/pipes/search.pipe.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/pipes/search.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/producto/producto.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/producto/producto.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/producto/producto.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/producto/producto.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/service/compras.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/service/compras.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/service/usuario.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/service/usuario.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/tienda/tienda.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/tienda/tienda.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/tienda/tienda.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/tienda/tienda.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/tslint.json" beforeDir="false" />
-    </list>
+    <list default="true" id="0f4d381c-ddd9-41d3-8458-e1053a51bcd2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -489,16 +408,15 @@
       <workItem from="1531801532201" duration="16371000" />
       <workItem from="1532303920779" duration="816000" />
       <workItem from="1532304840341" duration="1374000" />
-      <workItem from="1532311922579" duration="6506000" />
+      <workItem from="1532311922579" duration="6591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32519000" />
+    <option name="totallyTimeSpent" value="32604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32240438" />
