@@ -10,7 +10,7 @@
  * NODE_ENV=production node app
  * ```
  *
- * > If you're using git as a version control solution for your Sails app,
+ * > If you're using git as a codigo control solution for your Sails app,
  * > this file WILL BE COMMITTED to your repository by default, unless you add
  * > it to your .gitignore file.  If your repository will be publicly viewable,
  * > don't add private/sensitive data (like API secrets / db passwords) to this file!
@@ -50,7 +50,7 @@ module.exports = {
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
-      //  /\   To avoid checking it in to version control, you might opt to set
+      //  /\   To avoid checking it in to codigo control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
       //
       //  For example:
@@ -187,7 +187,7 @@ module.exports = {
     // adapter: '@sailshq/connect-redis',
     // url: 'redis://user:password@localhost:6379/databasenumber',
     //--------------------------------------------------------------------------
-    // /\   OR, to avoid checking it in to version control, you might opt to
+    // /\   OR, to avoid checking it in to codigo control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
     // For example:
@@ -262,8 +262,8 @@ module.exports = {
     * then uncomment the following lines.  This tells Socket.io about a Redis  *
     * server it can use to help it deliver broadcasted socket messages.        *
     *                                                                          *
-    * > Be sure a compatible version of @sailshq/socket.io-redis is installed! *
-    * > (See https://sailsjs.com/config/sockets for the latest version info)   *
+    * > Be sure a compatible codigo of @sailshq/socket.io-redis is installed! *
+    * > (See https://sailsjs.com/config/sockets for the latest codigo info)   *
     *                                                                          *
     * (https://sailsjs.com/docs/concepts/deployment/scaling)                   *
     *                                                                          *
@@ -271,7 +271,7 @@ module.exports = {
     // adapter: '@sailshq/socket.io-redis',
     // url: 'redis://user:password@bigsquid.redistogo.com:9562/databasenumber',
     //--------------------------------------------------------------------------
-    // /\   OR, to avoid checking it in to version control, you might opt to
+    // /\   OR, to avoid checking it in to codigo control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
     // For example:
@@ -378,7 +378,7 @@ module.exports = {
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',
     //--------------------------------------------------------------------------
-    // /\   OR, to avoid checking them in to version control, you might opt to
+    // /\   OR, to avoid checking them in to codigo control, you might opt to
     // ||   set sensitive credentials like these using environment variables.
     //
     // For example:

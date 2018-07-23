@@ -1,0 +1,50 @@
+<div class="row mt-5" *ngIf="padre">
+  <div class="col-md-12 mb-3" >
+    <div class="card  text-center"  >
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 class="card-title">{{padre.name| uppercase}}</h1>
+            <p class="card-text">Direccion: {{padre.direccion}}</p>
+          </div>
+          <div class="col-sm-6">
+            <img class="card-img-top" src="{{padre.img}}" alt="imagen SO">
+
+          </div>
+        </div>
+
+
+        <!--<a href="#" class="btn btn-primary">Buy Tickets</a>-->
+      </div>
+
+    </div>
+
+  </div>
+  <!--<div class="col-sm-12">-->
+    <!--hola-->
+    <!--<app-producto></app-producto>-->
+  <!--</div>-->
+    <div class="col-md-3 mb-3" *ngFor="let Producto of padre.apps">
+      <div class="card text-center"(click)="mostrarDetalleHijo(Producto)">
+        <div class="card-body">
+          <img class="card-img-top" src="{{Producto.img}}" width="160" height="80" alt="imagen app">
+          <h5 class="card-title">{{Producto.name}}</h5>
+          <p class="card-text">{{Producto.codigo}}</p>
+          <!--<a href="#" class="btn btn-success">Buy Tickets</a>-->
+        </div>
+        <div class="card-footer text-muted">
+          {{Producto.price | currency}}
+        </div>
+      </div>
+    </div>
+
+
+</div>
+<div class="row pt-2">
+  <div class="col-sm-4">
+    <button mat-raised-button (click)="goBack()">regresar</button>
+    <br>
+  </div>
+
+</div>
+

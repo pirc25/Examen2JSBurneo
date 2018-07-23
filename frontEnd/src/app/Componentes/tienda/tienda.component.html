@@ -1,0 +1,27 @@
+<div class="row pt-3">
+  <div class=" col-sm-12 form-group">
+    <input id="typeahead-http" type="text" class="form-control" [class.is-invalid]="searchFailed" [(ngModel)]="model" [ngbTypeahead]="search"
+           placeholder="Buscar..." />
+    <span *ngIf="searching">searching...</span>
+    <div class="invalid-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>
+  </div>
+
+  <div class="col-md-4 mb-3" *ngFor="let padre of padres">
+    <div class="card  text-center" (click)="mostrarDetallePadre(padre)">
+      <div class="card-body">
+        <h5 class="card-title">{{padre.name}}</h5>
+        <img class="card-img-top" src="{{padre.img}}" alt="imagen SO">
+        <p class="card-text">{{padre.api}}</p>
+        <!--<a href="#" class="btn btn-primary">Buy Tickets</a>-->
+      </div>
+      <div class="card-footer text-muted">
+        fecha lanzamiento: {{padre.direccion | direccion:'shortDate'}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

@@ -28,7 +28,7 @@ module.exports = function(grunt) {
   //
   // Of course, you can always remove this Grunt plugin altogether by
   // deleting this file.  But check this out: you can also use your
-  // _own_ custom version of this Grunt plugin.
+  // _own_ custom codigo of this Grunt plugin.
   //
   // Here's how:
   //
